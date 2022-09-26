@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Cristhoper Silva" />
-    <meta name="description" content="Meu nome é Cristhoper, sou programador Front-end apaixonado por tecnologia.
-     Trabalho com criação de sites prezando a qualidade. Confira meus projetos construídos."/>
-    <meta name="keywords" content="sites, web, desenvolvimento, programador, frontend, cristhoper, cristhoper silva, front-end, freelancer, freela, website, portfólio, html, css, javascript,">     
-    <!-- Canonical deve contar domínio do site EX: https://www.cristhoper.dev.br-->
-    <link rel="canonical" href="https://www.cristhoper.dev.br">
-    <!-- Theme Color deve ser alterado de acordo com cor padrão do site-->    
-    <meta name="theme-color" content="#00a3ff">
-    <meta name="copyright" content="Cristhoper Silva 2022">
-    <meta http-equiv="content-language" content="pt-br">
-    <!--og:image eve conter preview do site-->
-    <meta property="og:image" content="https://iuricode.com/assets/image/preview.png">
-    <meta property="og:title" content="Cristhoper Silva - Desenvolvedor Front-End">
-    <meta property="og:description" content="Meu nome é Cristhoper, sou programador Front-end apaixonado por tecnologia.
-    Trabalho com criação de sites prezando a qualidade. Confira meus projetos construídos.">
-    <meta property="og:type" content="website">
-    <!-- description deve contar domínio do site EX: https://www.cristhoper.dev.br-->
-    <meta property="og:url" content="https://www.cristhoper.dev.br">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | Cristhoper Silva</title>
-  </head>
-  <body>
-    <header>
-        ...
-    </header>
-    <main>
-        <section>
-            Home
-        </section>
-        <section>
-            Sobre
-        </section>
-        <section>
-            Conhecimentos
-        </section>
-        <section>
-            Projetos
-        </section>
-        <section>
-            Contatos
-        </section>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Cristhoper Silva" />
+  <meta name="description" content="Meu nome é Cristhoper, sou programador Front-end apaixonado por tecnologia.
+     Trabalho com criação de sites prezando a qualidade. Confira meus projetos construídos." />
+  <meta name="keywords"
+    content="sites, web, desenvolvimento, programador, frontend, cristhoper, cristhoper silva, front-end, freelancer, freela, website, portfólio, html, css, javascript," />
+  <!-- Canonical deve contar domínio do site EX: https://www.cristhoper.dev.br-->
+  <link rel="canonical" href="https://www.cristhoper.dev.br" />
+  <!-- Theme Color deve ser alterado de acordo com cor padrão do site-->
+  <meta name="theme-color" content="#00a3ff" />
+  <meta name="copyright" content="Cristhoper Silva 2022" />
+  <meta http-equiv="content-language" content="pt-br" />
+  <!--og:image eve conter preview do site-->
+  <meta property="og:image" content="https://iuricode.com/assets/image/preview.png" />
+  <meta property="og:title" content="Cristhoper Silva - Desenvolvedor Front-End" />
+  <meta property="og:description" content="Meu nome é Cristhoper, sou programador Front-end apaixonado por tecnologia.
+    Trabalho com criação de sites prezando a qualidade. Confira meus projetos construídos." />
+  <meta property="og:type" content="website" />
+  <!-- description deve contar domínio do site EX: https://www.cristhoper.dev.br-->
+  <meta property="og:url" content="https://www.cristhoper.dev.br" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Portfólio | Cristhoper Silva</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header" id="header">
+      <a href="#home"><i class="bi bi-code-slash logo"></i> Cristhoper</a>
+      <button class="menu-button" id="menu-button" aria-label="menu"><i class="menu-icone bi bi-list" onclick="menuShow()"></i></button>
+      <nav class="menu-mobile closed">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#conhecimentos">Conhecimentos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#conhecimentos">Conhecimentos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contatos">Contatos</a>
+
+      </nav>
+    </header>
+
+    <main>
+      <section>Home</section>
+      <section>Sobre</section>
+      <section>Conhecimentos</section>
+      <section>Projetos</section>
+      <section>Contatos</section>
     </main>
-    <footer>
-        ...
-    </footer>
-  </body>
+    <footer>...</footer>
+  </div>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
 </html>
