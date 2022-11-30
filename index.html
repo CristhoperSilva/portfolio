@@ -15,7 +15,7 @@
   <meta name="copyright" content="Cristhoper Silva 2022" />
   <meta http-equiv="content-language" content="pt-br" />
   <!--og:image eve conter preview do site-->
-  <meta property="og:image" content="https://iuricode.com/assets/image/preview.png" />
+  <meta property="og:image" content="https://www.cristhoper.dev.br" />
   <meta property="og:title" content="Cristhoper Silva - Desenvolvedor Front-End" />
   <meta property="og:description" content="Meu nome é Cristhoper, sou programador Front-end apaixonado por tecnologia.
     Trabalho com criação de sites prezando a qualidade. Confira meus projetos construídos." />
@@ -25,41 +25,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
   <title>Portfólio | Cristhoper Silva</title>
 </head>
 
 <body>
+  <header class="header" id="header">
+    <a href="#home"><i class="bi bi-code-slash logo"></i> Cristhoper</a>
+    <button class="menu-button" id="menu-button" aria-label="menu"><i class="menu-icone bi bi-list"
+        onclick="menuShow()"></i></button>          
+    <nav class="menu-mobile closed">
+      <ul>
+        <li><a href="#sobre" onclick="menuShow()">Sobre</a></li>
+        <li><a href="#conhecimentos" onclick="menuShow()">Conhecimentos</a></li>
+        <li><a href="#projetos" onclick="menuShow()">Projetos</a></li>
+        <li><a href="#contatos" onclick="menuShow()">Contatos</a></li>
+      </ul>
+    </nav>
+    <nav class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#conhecimentos">Conhecimentos</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contatos">Contatos</a>
+    </nav>
+  </header>
+  
   <div class="container">
-    <header class="header" id="header">
-      <a href="#home"><i class="bi bi-code-slash logo"></i> Cristhoper</a>
-      <button class="menu-button" id="menu-button" aria-label="menu"><i class="menu-icone bi bi-list" onclick="menuShow()"></i></button>
-      <nav class="menu-mobile closed">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#conhecimentos">Conhecimentos</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-        </ul>
-      </nav>
-      <nav class="menu">
-        <a href="#sobre">Sobre</a>
-        <a href="#conhecimentos">Conhecimentos</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contatos">Contatos</a>
-
-      </nav>
-    </header>
 
     <main>
-      <section>Home</section>
-      <section>Sobre</section>
-      <section>Conhecimentos</section>
-      <section>Projetos</section>
-      <section>Contatos</section>
+      <section id="home" class="section-home">
+        <div class="avatar">
+          <img src="assets/images/avatar.png" alt="avatar">
+        </div>
+        <div class="apresentacao">
+          <h1>Olá, eu sou o <br>         
+          <span class="nome">Cristhoper Silva</span>
+          <br>
+          <span class="stack" id="stack-html">Desenvolvedor Front-End.</span>
+          <span class="stack" id="stack"></span>
+        </h1>
+        </div>
+      </section>
+      <section id="sobre" class="section-sobre">
+        <h2>Quem sou</h2>        
+        <p>
+          Desenvolvedor Front-End freelancer apaixonado por tecnologia, formado em sistemas de informação, com mais de 8 anos de experiência na área de T.I.<br>
+          Estou em constante busca por conhecimento e pelas melhores práticas de desenvolvimento. 
+        </p>
+      </section>
+      <section id="conhecimentos">
+        <h2>Conhecimentos</h2>
+      </section>
+      <section id="projetos">
+        <h2>Projetos</h2>
+      </section>
+      <section id="contatos">
+        <h2>Contatos</h2>
+      </section>
     </main>
     <footer>...</footer>
   </div>
   <script src="assets/js/scripts.js"></script>
+  <script>onload = typeWriter()</script>
+  
 </body>
 
 </html>
