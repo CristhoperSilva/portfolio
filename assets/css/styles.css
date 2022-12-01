@@ -34,7 +34,7 @@ html {
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-color);    
 }
 
 .container {
@@ -82,7 +82,7 @@ header a i {
 
 .menu-mobile {
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     background-color: var(--background-menu);
     backdrop-filter: blur(5px);
     width: 100%;
@@ -116,18 +116,18 @@ h2{
     color: var(--lighter-text);
     font-size: 2rem;
     text-align: center;
-    padding-bottom: 3rem;    
+    padding-bottom: 2rem;     
 }
 
 
 
 .section-home {
-    height: 100vh;
+    height: calc(100vh - 80px);
     padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 0;    
+    top: 0;       
 }
 
 .apresentacao {
@@ -153,11 +153,11 @@ h2{
     height: 200px;
 }
 .section-sobre{
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
+    padding-top: 80px;
 }
 .section-sobre p{
     max-width: 800px;
@@ -166,8 +166,52 @@ h2{
     line-height: 1.5rem;    
 }
 
+.section-conhecimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding-top: 80px;
+}
+
+.section-conhecimentos h3{
+    margin: 2rem 0;
+}
+
+.conhecimentos-adquiridos, .conhecimentos-em-andamento{
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 20px;     
+}
+.conhecimento{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color); 
+    font-size: 1.2rem;   
+    color: var(--lighter-text);
+}
+
+.conhecimento img{
+    margin-bottom: 1rem;
+}
+
+
 /*Responsividade*/
-@media (min-width: 480px) {
+@media (min-width: 480px) {    
+
+    .conhecimentos-adquiridos, .conhecimentos-em-andamento{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 1024px;
+    }
 
     .apresentacao {
         text-align: left;
@@ -176,12 +220,6 @@ h2{
     .section-home {
         flex-direction: row-reverse;
         justify-content: space-around;
-    }
-}
-
-@media (min-width: 769px) {
-    .container {
-        max-width: 1024px;
     }
 
     .menu-button {
@@ -213,6 +251,38 @@ h2{
     .section-home .avatar img {
         height: 300px;
     }
+
+    .html:hover{
+        background-color: #F16529;
+    }
+    .css:hover{
+        background-color: #0170ba;
+    }
+    .javascript:hover{
+        background-color: #f7e018;
+    }
+    .bootstrap:hover{
+        background-color: #7641c2;
+    }
+    .git:hover{
+        background-color: #e84e31;
+    }
+    .command-line:hover{
+        background-color: #000;
+    }
+    .node:hover{
+        background-color: #89bb3c;
+    }
+    .docker:hover{
+        background-color: #099cec;
+    }
+    .react:hover{
+        background-color: #00d1f2;
+    }
+    .sass:hover{
+        background-color: #c26191;
+    }
+    
 }
 
 @media (min-width: 1024px) {
